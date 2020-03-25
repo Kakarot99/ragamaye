@@ -1,0 +1,159 @@
+.container {
+  overflow-x: hidden;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+.container .Hey {
+  position: relative;
+}
+.container .Hey video {
+  width: 100%;
+  height: auto;
+}
+.container .ClickMe {
+  Border-radius: 5rem;
+  display: none;
+  position: absolute;
+}
+.container .ClickMe img {
+  width: 150px;
+  height: 150px;
+}
+.container .L {
+  padding: 0px;
+}
+.container .L img {
+  width: 250px;
+  height: 250px;
+}
+.container .flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+.container .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.container .flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.container .flip-box-front,
+.container .flip-box-back {
+  padding: 0;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+.container .flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.container .flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.container .CMore {
+  margin-top: 50px;
+}
+.container .button {
+  margin: auto;
+  width: 200px;
+  background-color: mediumpurple;
+  border-radius: 25px;
+  height: 60px;
+}
+.container button:focus {
+  outline-style: none;
+}
+.container .x {
+  position: absolute;
+  right: 34px;
+  bottom: -54%;
+  border: black 1px;
+  height: 56px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 0px 14px;
+  box-shadow: 0px 0px 5px 0px #a6a6a6;
+}
+.container .L {
+  margin-top: 150px;
+  display: none;
+}
+.container .i {
+  display: flex;
+  padding-left: 75px;
+  padding-top: 0;
+}
+.container .w {
+  margin-top: 25px;
+}
+.container .w .e {
+  margin-top: 50px;
+}
+.container hr {
+  color: red;
+  border-radius: 25px;
+}
+@media (device-width: 414px) {
+  .container .x {
+    right: 90px !important;
+  }
+}
+@media (max-width: 667px) and (min-width: 375px) {
+  .container .x {
+    right: 38px;
+    left: 65px !important;
+  }
+}
+@media (max-width: 768px) {
+  .container .ins {
+    padding-left: 100px;
+  }
+  .container .CMore {
+    margin-left: 66px;
+  }
+  .container .i {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  .container video {
+    width: 100%;
+    height: auto;
+  }
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  .container .Three {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .container .x {
+    right: 38px;
+    left: 65px !important;
+  }
+  .container .L .flip-box {
+    margin-left: 65px;
+  }
+  .container .L img {
+    width: 100%;
+    height: 250px;
+  }
+}
